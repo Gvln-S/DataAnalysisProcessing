@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Predicción de Ingreso</title>
+</head>
+<body>
+    <h2>Formulario de Predicción de Ingreso</h2>
+    <form action="/predict" method="post">
+        Edad: <input type="number" name="age" required><br>
+        Sexo:
+        <select name="sex">
+            <option value="0">Mujer</option>
+            <option value="1">Hombre</option>
+        </select><br>
+        Nivel Educativo (codificado): <input type="number" name="education_level" required><br>
+        Ocupación (codificada): <input type="number" name="occupation" required><br>
+        Horas trabajadas por semana: <input type="number" name="hours_worked" required><br>
+        <input type="submit" value="Predecir">
+    </form>
+</body>
+</html>
+
